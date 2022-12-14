@@ -30,7 +30,7 @@ mongoose
     .connect(process.env.MONGO_URI)
     .then(() => {
         app.listen(PORT, () => {
-            console.log(`Yoo MongoDB 5000 is lit 🔥`)
+            console.log(`Yoo MongoDB ${PORT} is lit 🔥`)
         })
     })
     .catch((err) => console.log(err))
