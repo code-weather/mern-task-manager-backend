@@ -9,7 +9,7 @@ const { application } = require("express");
 
 const app = express();
 
-// MIDDLEWARE => A function that can be slotted and access to the requests and responses of the routes created
+// MIDDLEWARE => It is those methods/functions/operations that are called BETWEEN processing the Request and sending the Response in your application method
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors({
